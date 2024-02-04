@@ -1,0 +1,395 @@
+*{
+   box-sizing:border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poor Story', system-ui;
+}
+
+.container{
+    height: 100vh;
+    max-width: 100%;
+}
+.box {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    background: url(/images/paisaje4.jpg) center/cover no-repeat;
+    z-index: 2;
+}
+
+.box2 {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background: url(/images/paisaje3.jpg) center/cover no-repeat;
+    z-index: 2;
+}
+.box3 {
+   height: 100%;
+   width: 100%;
+   flex: 1;
+   background: url(/images/paisaje6.jpg) center/cover no-repeat;
+   z-index: 2;
+}
+.box4 {
+   height: 100%;
+   width: 100%;
+   flex: 1;
+   background: url(/images/paisaje5.jpg) center/cover no-repeat;
+   z-index: 2;
+}
+.box5{
+   height: 100%;
+   width: 100%;
+   flex: 1;
+   background: url(/images/fondo6.png) center/cover no-repeat;
+   z-index: 2;
+}
+.box6{
+   height: 100%;
+   width: 100%;
+   flex: 1;
+   background: url(/images/paisaje8.jpg) center/cover no-repeat;
+   z-index: 2;
+}
+.diagonal-box{
+    position:relative;
+    background: url(/images/lupulo3.png) center/cover no-repeat;
+    transform: skewY(3deg);
+    background-color: #f5f6f8;
+    height: 500px;
+    bottom: 200px;
+    z-index: 1;
+}
+ .beer-image{
+    width: 9%;
+    height: 150px;
+    background: url(/images/c1.png) center/cover no-repeat;
+    position: absolute;
+    left:330px;
+    bottom:170px;
+    z-index: 1;
+ }
+ .bottle-image{
+    width: 9%;
+    height: 60%;
+    background: url(/images/botella.png) center/cover no-repeat;
+    position: absolute;
+    left:200px;
+    bottom:130px;
+    z-index: 1;
+ }
+ .intro{
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    left: 1100px;
+    top:140px;
+ }
+ .boton1{
+    width:100px;
+    height: 60px;
+    position:absolute;
+    border:3px solid #f5f6f8;
+    border-radius: 20%;
+    left:125px;
+ }
+ .boton1 a:hover{
+   text-decoration: underline yellow 5px;
+ }
+ .boton1 a{
+   text-align: center;
+ }
+ h1{
+    color:#f5f6f8;
+    font-size: 52.65px;
+    text-align: center;
+ }
+ h2{
+    color:#f5f6f8;
+    text-align: center;
+ }
+ h3{
+    color:#f5f6f8;
+    text-align: center;
+    font-size: 15px;
+ }
+ .cerveza{
+    width: 350px;
+    height: 420px;
+    position: absolute;
+    left: 350px;
+    top:600px;
+    z-index: 1;
+ }
+ .cerveza h1{
+    color: #051016;
+ }
+ .cerveza h2{
+    color: #051016;
+ }
+ .image1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 1000px;
+    top:600px;
+    background: url(/images/img1.jpg) center/cover no-repeat;
+ }
+ 
+ .image2{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 825px;
+    top:600px;
+    background: url(/images/img2.jpg) center/cover no-repeat;
+ }
+ .image3{
+    width: 200px;
+    height: 210px;
+    position: absolute;
+    left: 775px;
+    top: 770px;
+    background: url(/images/img3.jpg) center/cover no-repeat;
+ }
+ .image4{
+    width: 170px;
+    height: 85px;
+    position: absolute;
+    left: 1000px;
+    top: 820px;
+    background: url(/images/img4.jpg) center/cover no-repeat;
+ }
+ .image5{
+    width: 190px;
+    height: 105px;
+    position: absolute;
+    left: 1000px;
+    top: 925px;
+    background: url(/images/img5.jpg) center/cover no-repeat;
+ }
+ .image6{
+   width: 190px;
+   height: 200px;
+   position: absolute;
+   left:1025px;
+   top: 1100px;
+   background: url(/images/brind1.jpg) center/cover no-repeat;
+   border-radius: 20px;
+}
+.image7{
+   width: 220px;
+   height: 200px;
+   position: absolute;
+   left: 400px;
+   top: 1100px;
+   background: url(/images/brind2.jpg) center/cover no-repeat;
+   border-radius: 20px;
+}
+.image8{
+   width: 350px;
+   height: 200px;
+   position: absolute;
+   left: 650px;
+   top: 1100px;
+   background: url(/images/brind3.jpg) center/cover no-repeat;
+   border-radius: 20px;
+}
+ .img-hover{
+    z-index: 1;
+ }
+ .img-hover:hover{
+    transform: scale(1.1);
+    border-radius: 10%;
+    z-index: 1;
+ }
+ .logo{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    left:730px;
+    top: 170px;
+    z-index: 1;
+    background: url(/images/logo.png) center/cover no-repeat;
+ }
+ .logo-footer{
+   width: 90px;
+   height: 90px;
+   position:absolute;
+   left:730px;
+   top:1320px;
+   z-index: 1;
+   background: url(/images/logo.png) center/cover no-repeat;
+}
+ .logo1{
+   width: 250px;
+   height: 250px;
+   position:relative;
+   left:680px;
+   top: 30px;
+   z-index: 1;
+   background: url(/images/logo2.png) center/cover no-repeat;
+ }
+ .logo2{
+   width: 100px;
+   height: 100px;
+   position:relative;
+   left:750px;
+   top: -1340px;
+   z-index: 1;
+   background: url(/images/logo.png) center/cover no-repeat;
+}
+ .conocer{
+    width: 350px;
+    height: 420px;
+    position: relative;
+    left: 610px;
+    top:265px;
+ }
+ .history{
+   width: 550px;
+   height: 620px;
+   position: absolute;
+   left: 800px;
+   top:330px;
+   background-color: rgba(19, 17, 17, 0.6);
+ }
+ .history-img{
+   width: 600px;
+   height: 620px;
+   position: absolute;
+   left: 200px;
+   top:330px;
+   background-color: rgba(19, 17, 17, 0.6);
+ }
+ .history img{
+   position: relative;
+   top:5px;
+   left:180px;
+   width: 150px;
+   height: 150px;
+ }
+ .history-img img{
+   position: relative;
+   width: 600px;
+   height: 600px;
+   top: 60%;
+   left: 40%;
+   transform: translate(-50%, -50%);
+   border-radius: 15px;
+ }
+ a {
+   text-decoration: none;
+   color: #f5f6f8;
+ }
+ .container-map a{
+   color: black;
+ }
+ .header{
+   position: absolute;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 85px;
+   padding: 5px 5%;
+ }
+ .header .logo1 img{
+   height: 70px;
+   width: auto;
+ }
+ .header .nav-links{
+   list-style: none;
+ }
+ .header .nav-links li{
+   display: inline-block;  
+   padding: 0 140px;
+   font-weight: bold;
+ }
+ .header .nav-links li:hover{
+   transform: scale(1.2);
+ }
+ .footer{
+   position: absolute;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 85px;
+   bottom:-710px;
+   left: 140px;
+ }
+ .footer .logo1 img{
+   height: 70px;
+   width: auto;
+ }
+ .footer .nav-links{
+   list-style: none;
+ }
+ .footer .nav-links li{
+   display: inline-block;  
+   padding: 0 166px;
+   font-weight: bold;
+ }
+ .footer .nav-links li:hover{
+   transform: scale(1.2);
+}
+.footer a{
+   color:black;
+}
+ .nav-links a:hover{
+   text-decoration: underline yellow 5px;  
+ }
+ .container-map{
+   height: 100vh;
+   max-width: 100%;
+}
+.form-body{
+   font-family: 'Poor Story', system-ui;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top:90px;
+   left:12%;
+}
+.form-body form {
+   padding: 50px 35px;
+   box-shadow: 0 0 30px rgba(0,0,0,0.2);
+   border-radius: 20px;
+   text-align: center;
+   width: 1200px;
+   background-color: white;
+   left:0px;
+}
+.input-group{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+.input-group .btn{
+   background-color: yellow;
+   color:white;
+}
+form h1{
+   color: #051016;
+   font-size: 70px;
+   margin-top: 5px;
+}
+form label{
+   color:#051016;
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+.input-group input,textarea{
+   padding:17px 25px;
+   border-radius: 25px;
+   margin-bottom: 20px;
+}
+.text-footer h1{
+   color:#051016;
+   padding-top: 230px;
+}

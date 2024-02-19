@@ -171,7 +171,7 @@ li:hover{
     .logo{
         position: absolute;
         top:-30%;
-        left:20%;
+        left:10%;
      }
      .historia{
         z-index: 500;
@@ -180,6 +180,9 @@ li:hover{
         color: white;
         background-color: black;
         font-size: 30px;
+        left:80%;
+        top:30%;
+        position: absolute;
     }
     #header{
         background-color: black;

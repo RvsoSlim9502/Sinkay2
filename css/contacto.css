@@ -30,11 +30,19 @@ header{
     justify-content: space-between;
     align-items: center;
     padding:0 20%;
-    height: 100px;
+    height: 80px;
     z-index: 1000;
 }
 .logo{
    height: 50px;
+}
+.logo2{
+    height: 50px;
+    width: 62.7px;
+    top:20%;
+    left:10%;
+    position: absolute;
+    display:none;
 }
 .menu{
     display: flex;
@@ -195,10 +203,11 @@ li:hover{
         width: 100%;
     }
     .logo{
-        position: absolute;
-        top:-30%;
-        left:10%;
+       display: none;
      }
+     .logo2{
+        display:block;
+    }
     #header{
         background-color: black;
         justify-content: flex-end;
@@ -225,7 +234,7 @@ li:hover{
     }
     .footer{
        max-width: 100%;
-       top: 15%;
+       top: 25%;
     }
     .footer h1{
         font-size: 28px;
@@ -289,7 +298,7 @@ li:hover{
         flex-direction: column;
       }
       .redes div{
-        padding: 30px 30px;
+        padding: 20px 20px;
       }
       .redes div i{
         font-size: 30px;

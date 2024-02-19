@@ -315,6 +315,11 @@ li:hover{
         transform: scale(1);
         text-decoration: underline yellow 5px;  
       }
-}
+    #header i{
+        color: white;
+        background-color: black;
+        font-size: 30px;
+      }
+    }
 
 }

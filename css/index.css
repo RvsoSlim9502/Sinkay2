@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+}
+
+body{
+    height: 100vh;
+    margin:0;
+    font-family: 'Poor Story', system-ui;
+    box-sizing: border-box;
+}
+.container{
+    height: 150vh;
+    width: 100%;
+    background: url(/images/paisaje4.jpg) center/cover no-repeat;
+}
+.container2{
+    height: 150vh;
+    width: 100%;
+    background: url(/images/paisaje3.jpg) center/cover no-repeat;
+}
+.diagonal{
+    position: absolute;
+    top:75%;
+    width: 100%;
+    height: 100vh;
+    transform: skewY(3deg);
+    background: url(/images/lupulo3.png) center/cover no-repeat;
+    background-color: #f5f6f8;
+}
+.premium{
+    height: 50vh;
+    width: 500px;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left:20%;
+    transform: skewY(-3deg);
+}
+.conoce{
+    height: 50vh;
+    width: 500px;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 55%;
+    left:35%;
+}
+.intro{
+    height: 50vh;
+    width: 25vw;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    left: 55%;
+}
+.botella{
+    height: 400px;
+    width: 10%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left:12%;
+    z-index: 100;
+}
+.vaso{
+    height: 200px;
+    width: 10%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:25%;
+    bottom:10%;
+    z-index: 100;
+}
+.botella img, .vaso img{
+    width: 100%;
+    height: 100%;
+}
+
+.intro h1, .conoce h1{
+    color:#f5f6f8;
+    font-size: 55px;
+    text-align: center; 
+ }
+ .intro h2, .conoce h2{
+    color:#f5f6f8;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.premium h1{
+    color:black;
+    font-size: 55px;
+    text-align: center; 
+}
+.premium h2{
+    color:black;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20%;
+    height: 100px;
+}
+
+.imagen1{
+    height: 400px;
+    width: 10%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    z-index: 100;
+    transform: skewY(-3deg);
+}
+
+.imagen2{
+    height: 400px;
+    width: 15%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 67%;
+    z-index: 100;
+    transform: skewY(-3deg);
+}
+.imagen3{
+    height: 400px;
+    width: 15%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 100;
+    transform: skewY(-3deg);
+}
+.imagen4{
+    height: 400px;
+    width: 18%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 28%;
+    left: 67%;
+    z-index: 100;
+    transform: skewY(-3deg);
+}
+.imagen5{
+    height: 400px;
+    width: 15%;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 67%;
+    z-index: 100;
+    transform: skewY(-3deg);
+}
+.imagen1:hover,.imagen2:hover, 
+.imagen3:hover,.imagen4:hover,.imagen5:hover{
+    transform: scale(1.1) skewY(-3deg);
+    
+}
+.logo{
+   height: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #f5f6f8;
+    list-style: none;
+}
+.item:hover{
+    color:yellow;
+}
+#menu{
+    display: none;
+}
+label{
+    cursor: pointer;
+    display: none;
+}
+.left{
+    float:left;
+    margin-right:150px;
+}
+.right{
+    float:right;
+    margin-left:150px;
+}
+a {
+    text-decoration: none;
+    color: #f5f6f8;
+  }
+li:hover{
+    transform: scale(1.2);
+    text-decoration: underline yellow 5px;  
+  }
+/* RESPONSIVE */
+@media(max-width: 760px){
+    .container{
+        flex-direction: column;
+    }
+    .intro{
+        height: 100vh;
+        width: 40vw;
+        top:10%;
+        left:30%;
+    }
+    .intro h1, .conoce h1,.premium h1{
+        font-size: 50px;
+    }
+    .conoce h2, .intro h2,.premium h2{
+        font-size: 25px;
+    }
+
+    .conoce{
+        height: 100vh;
+        width: 40vw;
+        top:0%;
+        left:30%;
+        padding-top:50%;
+        
+    }
+    .premium{
+        height: 100vh;
+        width: 40vw;
+        top:0%;
+        left:30%;
+        padding-top: 20%;
+    }
+    .botella img, .vaso img{
+        display: none;
+    }
+    .menu{
+        padding: 30px;
+        margin:0;
+        position: absolute;
+        top:100%;
+        left:0%;
+        right: 0;
+        display: none;
+        background-color: black;
+        font-style: italic;
+        background-color: rgba(19, 17, 17, 0.6);
+    }
+    .item{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    label{
+        display:initial;
+    }
+    #menu:checked ~.menu{
+        display: initial;
+    }
+    .imagen1,.imagen2,.imagen3,.imagen4, .imagen5{
+        display: none;
+    }
+    li:hover{
+        transform: scale(1);
+        text-decoration: underline yellow 5px;  
+      }
+
+}

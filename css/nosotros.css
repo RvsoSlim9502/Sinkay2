@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+}
+
+body{
+    height: 100vh;
+    margin:0;
+    font-family: 'Poor Story', system-ui;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url(/images/paisaje6.jpg) center/cover no-repeat;
+}
+.container2{
+    height: 100vh;
+    width: 100%;
+    background: url(/images/paisaje5.webp) center/cover no-repeat;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20%;
+    height: 100px;
+}
+.historia{
+    height: 80vh;
+    width: 80vw;
+    top:20%;
+    left: 10%;
+    position: relative;
+    background-color: rgba(19, 17, 17, 0.6);
+    flex-direction: column;
+}
+.historia img{
+   position: absolute;
+   width: 40vw;
+   height: 70vh;
+   top: 70%;
+   left: 30%;
+   transform: translate(-50%, -50%);
+   border-radius: 15px;
+}
+
+.intro{
+    height: 50vh;
+    width: 35vw;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 15%;
+    left: 55%;
+}
+.intro img{
+    position: relative;
+    top:20%;
+    left:50%;
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+}
+.intro h1{
+    color:#f5f6f8;
+    font-size: 55px;
+    text-align: center; 
+    padding-top: 20px;
+}
+.intro h2{
+    color:#f5f6f8;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.logo{
+   height: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #f5f6f8;
+    list-style: none;
+}
+.item:hover{
+    color:yellow;
+}
+#menu{
+    display: none;
+}
+label{
+    cursor: pointer;
+    display: none;
+}
+.left{
+    float:left;
+    margin-right:150px;
+}
+.right{
+    float:right;
+    margin-left:150px;
+}
+a {
+    text-decoration: none;
+    color: #f5f6f8;
+  }
+li:hover{
+    transform: scale(1.2);
+    text-decoration: underline yellow 5px;  
+  }
+/*RESPONSIVE*/
+@media(max-width: 760px){
+    .menu{
+        padding: 30px;
+        margin:0;
+        position: absolute;
+        top:100%;
+        left:0%;
+        right: 0;
+        display: none;
+        background-color: black;
+        background-color: rgba(19, 17, 17, 0.6);
+        font-style: italic;
+    }
+    .item{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    label{
+        display:initial;
+    }
+    #menu:checked ~.menu{
+        display: initial;
+    }
+    .historia img{
+        display: none;
+    }
+    .intro{
+        height: 100vh;
+        width: 60vw;
+        top:10%;
+        left:10%;
+    }
+    li:hover{
+        transform: scale(1);
+        text-decoration: underline yellow 5px;  
+      }
+
+}

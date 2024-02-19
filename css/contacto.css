@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poor Story', system-ui;
+}
+
+body{
+    height: 100vh;
+    margin:0;
+    font-family: 'Poor Story', system-ui;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: url(/images/paisaje8.jpg) center/cover no-repeat;
+}
+.container2{
+    height: 160vh;
+    width: 100%;
+    background: url(/images/fondo6.png) center/cover no-repeat;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20%;
+    height: 100px;
+}
+.logo{
+   height: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #f5f6f8;
+    list-style: none;
+}
+.item:hover{
+    color:yellow;
+}
+#menu{
+    display: none;
+}
+#header label{
+    cursor: pointer;
+    display: none;
+}
+.left{
+    float:left;
+    margin-right:150px;
+}
+.right{
+    float:right;
+    margin-left:150px;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f6f8;
+  }
+li:hover{
+    transform: scale(1.2);
+    text-decoration: underline yellow 5px;  
+  }
+.form-body{
+    font-family: 'Poor Story', system-ui;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:90px;
+    left:17%;
+ }
+ .form-body form {
+    padding: 50px 35px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 70vw;
+    background-color: white;
+    left:0px;
+ }
+ .input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+ }
+ .input-group .btn{
+    background-color: yellow;
+    color:white;
+ }
+ form h1{
+    color: #051016;
+    font-size: 70px;
+    margin-top: 5px;
+ }
+ form label{
+    color:#051016;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ .input-group input,textarea{
+    padding:17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+ }
+ .footer{
+    height: 120vh;
+    width: 80vw;
+    display:flex;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.footer h1{
+    color:black;
+    font-size: 55px;
+    text-align: center; 
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+}
+.imagen {
+    width: 20vw;
+    height: 30vh;
+    margin: 0 25px;
+    border-radius:20px;
+  }
+
+.imagen-central {
+    width: 30vw;
+    border-radius:20px;
+  }
+.imagen:hover, .imagen-central:hover{
+    transform: scale(1.1);
+    border-radius: 10%;
+}
+  .redes{
+    padding:  150px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 120vh;
+    width: 80vw;
+  }
+  .redes div{
+    padding: 50px 50px;
+  }
+  .redes div i{
+    font-size: 70px;
+  }
+
+ /* RESPONSIVE */
+@media(max-width: 760px){
+    
+    .menu{
+        padding: 30px;
+        margin:0;
+        position: absolute;
+        top:100%;
+        left:0%;
+        right: 0;
+        display: none;
+        background-color: black;
+        font-style: italic;
+        background-color: rgba(19, 17, 17, 0.6);
+        
+    }
+    .item{
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    #header label{
+        display:initial;
+    }
+    #menu:checked ~.menu{
+        display: initial;
+    }
+    .imagenes{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .imagen {
+        width: 50vw;
+        height: 20vh;
+        margin: 0 25px
+    }
+    .imagen-central {
+        width: 50vw;
+        height: 20vh;
+    }
+    .footer{
+       max-width: 100%;
+       top: 15%;
+    }
+    .footer h1{
+        font-size: 28px;
+    }
+    .form-body{
+        font-family: 'Poor Story', system-ui;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:90px;
+        left:17%;
+     }
+     .form-body form {
+        padding: 50px 35px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 70vw;
+        background-color: white;
+        left:0px;
+     }
+     .input-group{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+     }
+     .input-group .btn{
+        background-color: yellow;
+        color:black;
+        cursor: pointer;
+     }
+     form h1{
+        color: #051016;
+        font-size: 35px;
+        margin-top: 5px;
+     }
+     form label{
+        color:#051016;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+     }
+     .input-group input,textarea{
+        padding:17px 25px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+     }
+     li:hover{
+        transform: scale(1);
+        text-decoration: underline yellow 5px;  
+      }
+      .redes{
+        padding:  30px 30px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 120vh;
+        width: 80vw;
+        flex-direction: column;
+      }
+      .redes div{
+        padding: 30px 30px;
+      }
+      .redes div i{
+        font-size: 30px;
+      }
+}

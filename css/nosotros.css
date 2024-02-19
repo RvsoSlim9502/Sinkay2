@@ -31,6 +31,7 @@ header{
     align-items: center;
     padding:0 20%;
     height: 100px;
+    z-index: 1000;
 }
 .historia{
     height: 80vh;
@@ -40,6 +41,7 @@ header{
     position: relative;
     background-color: rgba(19, 17, 17, 0.6);
     flex-direction: column;
+    z-index: 500;
 }
 .historia img{
    position: absolute;
@@ -55,7 +57,6 @@ header{
     height: 50vh;
     width: 35vw;
     display:flex;
-    overflow: hidden;
     flex-direction: column;
     text-align: center;
     position: relative;
@@ -90,6 +91,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 .item{
     margin: 0 15px;
@@ -108,6 +110,7 @@ header{
 label{
     cursor: pointer;
     display: none;
+    z-index: 1000;
 }
 .left{
     float:left;
@@ -136,15 +139,18 @@ li:hover{
         right: 0;
         display: none;
         background-color: black;
-        background-color: rgba(19, 17, 17, 0.6);
         font-style: italic;
+        z-index: 1000;
+        text-align: center;
     }
     .item{
         margin: 0 0 20px 0;
         width: 100%;
+        z-index: 100;
     }
     label{
         display:initial;
+        z-index: 1000;
     }
     #menu:checked ~.menu{
         display: initial;
@@ -162,5 +168,13 @@ li:hover{
         transform: scale(1);
         text-decoration: underline yellow 5px;  
       }
+    .logo{
+        position: absolute;
+        top:-30%;
+        left:42%;
+     }
+     .historia{
+        z-index: 500;
+     }
 
 }

@@ -290,4 +290,9 @@ li:hover{
       .redes div i{
         font-size: 30px;
       }
+    #header i{
+        color: white;
+        background-color: black;
+        font-size: 30px;
+      }
 }

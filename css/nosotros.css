@@ -176,5 +176,10 @@ li:hover{
      .historia{
         z-index: 500;
      }
+    #header i{
+        color: white;
+        background-color: black;
+        font-size: 30px;
+      }
 
 }

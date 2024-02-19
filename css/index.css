@@ -264,7 +264,7 @@ li:hover{
     .logo{
         position: absolute;
         top:-30%;
-        left:42%;
+        left:20%;
      }
     .conoce{
         height: 100vh;
@@ -314,12 +314,16 @@ li:hover{
     li:hover{
         transform: scale(1);
         text-decoration: underline yellow 5px;  
-      }
+    }
     #header i{
         color: white;
         background-color: black;
-        font-size: 30px;
-      }
+        font-size: 40px;
+        
+    }
+    #header{
+        justify-content: flex-end;
+        background-color: black;  
     }
 
 }

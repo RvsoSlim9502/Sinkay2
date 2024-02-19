@@ -171,15 +171,19 @@ li:hover{
     .logo{
         position: absolute;
         top:-30%;
-        left:42%;
+        left:20%;
      }
      .historia{
         z-index: 500;
      }
-    #header i{
+     #header i{
         color: white;
         background-color: black;
         font-size: 30px;
-      }
+    }
+    #header{
+        background-color: black;
+        justify-content: flex-end;
+    }
 
 }

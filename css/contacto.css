@@ -247,14 +247,14 @@ li:hover{
         justify-content: center;
         position: absolute;
         top:90px;
-        left:17%;
+        left:5%;
      }
      .form-body form {
         padding: 50px 35px;
         box-shadow: 0 0 30px rgba(0,0,0,0.2);
         border-radius: 20px;
         text-align: center;
-        width: 70vw;
+        width: 90vw;
         background-color: white;
         left:0px;
      }

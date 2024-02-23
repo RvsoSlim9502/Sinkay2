@@ -71,6 +71,55 @@
         </div>
         
     </section>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAPtk8XFdlvyArRxbDeSzxdyMFKZpy7tWw",
+          authDomain: "sinkay-751d1.firebaseapp.com",
+          projectId: "sinkay-751d1",
+          storageBucket: "sinkay-751d1.appspot.com",
+          messagingSenderId: "684860148271",
+          appId: "1:684860148271:web:ee43a64a646777960294da"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import {getDatabase, set, get,update, remove, ref, child}
+        from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"
+
+        const db = getDatabase();
+        var name = document.querySelector("#name");
+        var email = document.querySelector("#email");
+        var phone = document.querySelector("#phone");
+        var message = document.querySelector("#message");
+        
+        var enviar = document.querySelector("#enviar");
+
+        function InsertData() {
+            set(ref(db, "Clientes/" + name.value), {
+
+                nombre: name.value,
+                correo: email.value,
+                telefono: phone.value,
+                mensaje: message.value
+            })
+            .then(()=>{
+                alert("Mensaje enviado")
+            })
+            .catch((error)=>{
+                alert(error)
+            });
+        }
+
+        enviar.addEventListener('click',InsertData);
+
+      </script>
     <script src="https://kit.fontawesome.com/9a33242a46.js" crossorigin="anonymous"></script>
 </body>
 </html>
